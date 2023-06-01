@@ -1,0 +1,40 @@
+@font-face {
+  font-family: roboto-700;
+  src: url(../font/roboto-700.ttf);
+}
+
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: #3C3A39;
+}
+
+.wrapper {
+  padding: 0 24px;
+}
+
+.menu {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-logo {
+  color: #ffffff;
+  font: 18px/24px roboto-700;
+}
+
+.menu-button {
+  width: 40px;
+  height: 40px;
+  background: transparent url(../svg/menu.svg) center/18px auto no-repeat; 
+}
