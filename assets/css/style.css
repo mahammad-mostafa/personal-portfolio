@@ -1,16 +1,16 @@
 @font-face {
-  font-family: roboto-700;
-  src: url(../font/roboto-700.ttf);
+  font-family: roboto-regular;
+  src: url(../font/roboto-regular.ttf);
 }
 
 @font-face {
-  font-family: crete-400;
-  src: url(../font/crete-400.ttf);
+  font-family: crete-regular;
+  src: url(../font/crete-regular.ttf);
 }
 
 @font-face {
-  font-family: poppins-400;
-  src: url(../font/poppins-400.ttf);
+  font-family: poppins-light;
+  src: url(../font/poppins-light.ttf);
 }
 
 html {
@@ -20,11 +20,33 @@ html {
 
 body {
   padding: 0;
+  font-size: 16px;
   margin: 0;
 }
 
 header {
   background-color: #3C3A39;
+}
+
+button {
+  color: #FFFFFF;
+  background-color: #F55800;
+  border: 1px solid #F55800;
+}
+
+button:hover {
+  color: #F55800;
+  background-color: #FFF5E1;
+}
+
+button:focus {
+  color: #F4F1F0;
+  background-color: #E05304;
+}
+
+button:disabled {
+  color: #5B5957;
+  background-color: #F4F1F0;
 }
 
 .wrapper {
@@ -40,7 +62,7 @@ header {
 
 .menu-logo {
   color: #ffffff;
-  font: 18px/24px roboto-700;
+  font: 1.125rem/1.5rem roboto-regular;
 }
 
 .menu-button {
@@ -51,26 +73,53 @@ header {
 
 .hero {
   display: flex;
-  gap: 12px;
+  gap: 10px;
   flex-direction: column;
   justify-content: center;
   padding: 120px 24px;
-  background-color: #1C1A19;
+  background: #1C1A19 url(../svg/hero.png) calc(100% + 120px) calc(100% - 5px)/212px 305px no-repeat;
 }
 
 .hero-title {
   color: #FF6B00;
-  font: 56px/64px crete-400;
+  font: 3.5rem/4rem crete-regular;
   letter-spacing: .37px;
   margin: 0;
 }
 
 .hero-subtitle {
   color: #FFF5E1;
-  font: 24px/32px roboto-700;
+  font: 1.5rem/2rem roboto-regular;
+  margin-top: -5px;
 }
 
 .hero-text {
   color: #FFFFFF;
-  font: 16px/24px poppins-400;
+  font: 1rem/1.5rem poppins-light;
+}
+
+.hero-social {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hero-social-link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin-top: 3px;
+}
+
+@media(min-width:375px) {
+  
+}
+
+@media(min-width:768px) {
+
 }
