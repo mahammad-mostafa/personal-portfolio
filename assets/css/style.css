@@ -25,28 +25,28 @@ body {
 }
 
 header {
-  background-color: #3C3A39;
+  background-color: #3c3a39;
 }
 
 button {
-  color: #FFFFFF;
-  background-color: #F55800;
-  border: 1px solid #F55800;
+  color: #fff;
+  background-color: #f55800;
+  border: 1px solid #f55800;
 }
 
 button:hover {
-  color: #F55800;
-  background-color: #FFF5E1;
+  color: #f55800;
+  background-color: #fff5e1;
 }
 
 button:focus {
-  color: #F4F1F0;
-  background-color: #E05304;
+  color: #f4f1f0;
+  background-color: #e05304;
 }
 
 button:disabled {
-  color: #5B5957;
-  background-color: #F4F1F0;
+  color: #5b5957;
+  background-color: #f4f1f0;
 }
 
 .wrapper {
@@ -61,8 +61,8 @@ button:disabled {
 }
 
 .menu-logo {
-  color: #ffffff;
-  font: 1.125rem/1.5rem roboto-regular;
+  color: #fff;
+  font: 1.125rem/1.5rem roboto-regular, tahoma;
 }
 
 .menu-button {
@@ -77,25 +77,25 @@ button:disabled {
   flex-direction: column;
   justify-content: center;
   padding: 120px 24px;
-  background: #1C1A19 url(../img/hero.png) calc(100% + 121px) calc(100% - 5px)/212px 305px no-repeat;
+  background: #1c1a19 url(../img/hero.png) calc(100% + 121px) calc(100% - 5px)/212px 305px no-repeat;
 }
 
 .hero-title {
-  color: #FF6B00;
-  font: 3.5rem/4rem crete-regular;
-  letter-spacing: .37px;
+  color: #ff6b00;
+  font: 3.5rem/4rem crete-regular, tahoma;
+  letter-spacing: 0.37px;
   margin: 0;
 }
 
 .hero-subtitle {
-  color: #FFF5E1;
-  font: 1.5rem/2rem roboto-regular;
+  color: #fff5e1;
+  font: 1.5rem/2rem roboto-regular, tahoma;
   margin-top: -4px;
 }
 
 .hero-text {
-  color: #FFFFFF;
-  font: 1rem/1.5rem poppins-light;
+  color: #fff;
+  font: 1rem/1.5rem poppins-light, tahoma;
 }
 
 .hero-social {
@@ -114,12 +114,4 @@ button:disabled {
   justify-content: center;
   text-decoration: none;
   margin-top: 4px;
-}
-
-@media(min-width:375px) {
-  
-}
-
-@media(min-width:768px) {
-
 }
