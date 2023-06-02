@@ -28,7 +28,11 @@ header {
   background-color: #3c3a39;
 }
 
-h1, h2, h3, ul, p {
+h1,
+h2,
+h3,
+ul,
+p {
   margin: 0;
 }
 
