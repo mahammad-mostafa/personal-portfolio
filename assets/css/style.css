@@ -62,7 +62,7 @@ button:disabled {
 
 .menu-logo {
   color: #fff;
-  font: 1.125rem/1.5rem roboto-regular, tahoma;
+  font: 1.125rem/1.5rem roboto-regular, serif;
 }
 
 .menu-button {
@@ -82,20 +82,20 @@ button:disabled {
 
 .hero-title {
   color: #ff6b00;
-  font: 3.5rem/4rem crete-regular, tahoma;
+  font: 3.5rem/4rem crete-regular, serif;
   letter-spacing: 0.37px;
   margin: 0;
 }
 
 .hero-subtitle {
   color: #fff5e1;
-  font: 1.5rem/2rem roboto-regular, tahoma;
+  font: 1.5rem/2rem roboto-regular, serif;
   margin-top: -4px;
 }
 
 .hero-text {
   color: #fff;
-  font: 1rem/1.5rem poppins-light, tahoma;
+  font: 1rem/1.5rem poppins-light, serif;
 }
 
 .hero-social {
