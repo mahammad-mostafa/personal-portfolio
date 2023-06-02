@@ -36,7 +36,7 @@ It also includes some config linters for `HTML` & `CSS3` in the `.github` folder
 
 📌 **Key Features:**
 - Mobile first design
-- Simple HTML page with a single toolbar and headline
+- Simple HTML page with a toolbar and headline
 
 <p align="right"><a href="#title">back to top</a></p>
 
