@@ -28,6 +28,14 @@ header {
   background-color: #3c3a39;
 }
 
+h1 , h2 , h3 , ul , p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 button {
   color: #fff;
   background-color: #f55800;
@@ -53,6 +61,14 @@ button:disabled {
   padding: 0 24px;
 }
 
+.link-icon-square {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .menu {
   height: 48px;
   display: flex;
@@ -65,15 +81,8 @@ button:disabled {
   font: 1.125rem/1.5rem roboto-regular, serif;
 }
 
-.menu-button {
-  width: 40px;
-  height: 40px;
-  background: transparent url(../svg/menu.svg) center/18px auto no-repeat;
-}
-
 .hero {
   display: flex;
-  gap: 10px;
   flex-direction: column;
   justify-content: center;
   padding: 120px 24px;
@@ -84,18 +93,18 @@ button:disabled {
   color: #ff6b00;
   font: 3.5rem/4rem crete-regular, serif;
   letter-spacing: 0.37px;
-  margin: 0;
 }
 
 .hero-subtitle {
   color: #fff5e1;
   font: 1.5rem/2rem roboto-regular, serif;
-  margin-top: -4px;
+  margin: 6px 0 10px;
 }
 
 .hero-text {
   color: #fff;
   font: 1rem/1.5rem poppins-light, serif;
+  letter-spacing: 0.1px;
 }
 
 .hero-social {
@@ -103,15 +112,5 @@ button:disabled {
   align-items: center;
   list-style: none;
   padding: 0;
-  margin: 0;
-}
-
-.hero-social-link {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  margin-top: 4px;
+  margin-top: 14px;
 }
