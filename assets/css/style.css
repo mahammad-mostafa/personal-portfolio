@@ -185,12 +185,12 @@ a {
 }
 
 .works-grid-item-flex h2 {
-  font: 2rem/2.75rem crete-regular;
+  font: 2rem/2.75rem crete-regular, serif;
   margin-top: 12px;
 }
 
 .works-grid-item-flex p {
-  font: 1rem/1.5rem inter-regular;
+  font: 1rem/1.5rem inter-regular, serif;
 }
 
 .works-grid-item-flex ul {
@@ -203,13 +203,13 @@ a {
   display: block;
   color: inherit;
   padding: 10px 12px;
-  font: 0.9375rem/1.25rem inter-medium;
+  font: 0.9375rem/1.25rem inter-medium, serif;
   border: 1px solid #8993a4;
 }
 
 .works-grid-item-flex .button {
   align-self: flex-start;
-  font: 1.0625rem/1.5rem inter-bold;
+  font: 1.0625rem/1.5rem inter-bold, serif;
 }
 
 .works-grid-card .works-grid-item-flex {
@@ -254,19 +254,19 @@ a {
 
 .about-top h1 {
   color: #ff6b00;
-  font: 4.5rem/5.5rem crete-regular;
+  font: 4.5rem/5.5rem crete-regular, serif;
   letter-spacing: 0.37px;
 }
 
 .about-top p {
   color: #f4f5f7;
-  font: 1rem/1.5rem inter-regular;
+  font: 1rem/1.5rem inter-regular, serif;
   letter-spacing: 0.37px;
 }
 
 .about-top .button {
   align-self: flex-start;
-  font: 1.0625rem/1.5rem inter-bold;
+  font: 1.0625rem/1.5rem inter-bold, serif;
 }
 
 .about hr {
@@ -293,7 +293,7 @@ a {
 }
 
 .about-list span {
-  font: 2rem/2.75rem inter-bold;
+  font: 2rem/2.75rem inter-bold, serif;
 }
 
 .about-list ul {
@@ -304,5 +304,5 @@ a {
 
 .about-list ul a {
   color: inherit;
-  font: 1.375rem/2.6875rem inter-regular;
+  font: 1.375rem/2.6875rem inter-regular, serif;
 }
