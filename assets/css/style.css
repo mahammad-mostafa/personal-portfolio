@@ -32,7 +32,8 @@ h1,
 h2,
 h3,
 ul,
-p {
+p,
+hr {
   margin: 0;
 }
 
@@ -86,9 +87,6 @@ button:disabled {
 }
 
 .hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   padding: 120px 24px;
   background: #1c1a19 url(../img/hero.png) calc(100% + 121px) calc(100% - 5px)/212px 305px no-repeat;
 }
@@ -117,4 +115,18 @@ button:disabled {
   list-style: none;
   padding: 0;
   margin-top: 14px;
+}
+
+.works-header {
+  padding: 120px 0 80px;
+}
+
+.works-title {
+  color: #1c1a19;
+  font: 2.5rem/3.25rem crete-regular, serif;
+}
+
+.works-line {
+  border-color: #212121;
+  margin-top: 24px;
 }
