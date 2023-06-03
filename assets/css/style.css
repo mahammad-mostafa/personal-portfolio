@@ -115,6 +115,10 @@ a {
   justify-content: center;
 }
 
+.menu-button img {
+  width: 18px;
+}
+
 .hero {
   display: flex;
   gap: 12px;
@@ -152,6 +156,10 @@ a {
   justify-content: center;
 }
 
+.hero-social img {
+  height: 20px;
+}
+
 .works-title {
   padding: 120px 0 80px;
 }
@@ -175,6 +183,10 @@ a {
 
 .works-grid-item {
   position: relative;
+}
+
+.works-grid-item img {
+  width: 100%;
 }
 
 .works-grid-item-flex {
