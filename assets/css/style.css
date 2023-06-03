@@ -63,6 +63,7 @@ a {
 
 .button {
   color: #fff;
+  padding: 12px;
   background-color: #f55800;
   border: 1px solid #f55800;
 }
@@ -80,6 +81,14 @@ a {
 .button:disabled {
   color: #5b5957;
   background-color: #f4f1f0;
+}
+
+.rhombus {
+  transform: rotateZ(45deg);
+}
+
+.circle {
+  border-radius: 50%;
 }
 
 .wrapper {
@@ -161,6 +170,7 @@ a {
   display: grid;
   row-gap: 24px;
   grid-template-columns: 100%;
+  margin-bottom: 120px;
 }
 
 .works-grid-item {
@@ -198,7 +208,6 @@ a {
 }
 
 .works-grid-item-flex .button {
-  padding: 12px;
   align-self: flex-start;
   font: 1.0625rem/1.5rem inter-bold;
 }
@@ -228,4 +237,72 @@ a {
   align-self: stretch;
   text-align: center;
   margin-top: 10px;
+}
+
+.about {
+  background-color: #1c1a19;
+}
+
+.about-top {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 120px 0 209px;
+  background: transparent url(../img/about.png) calc(100% + 250px) calc(100% - 5px)/400px 250px no-repeat;
+}
+
+.about-top h1 {
+  color: #ff6b00;
+  font: 4.5rem/5.5rem crete-regular;
+  letter-spacing: 0.37px;
+}
+
+.about-top p {
+  color: #f4f5f7;
+  font: 1rem/1.5rem inter-regular;
+  letter-spacing: 0.37px;
+}
+
+.about-top .button {
+  align-self: flex-start;
+  font: 1.0625rem/1.5rem inter-bold;
+}
+
+.about hr {
+  border: 1px solid #fff;
+}
+
+.about-list {
+  display: flex;
+  gap: 24px;
+  color: #fff;
+  text-align: center;
+  flex-direction: column;
+  padding: 128px 0 75px;
+}
+
+.about-list i {
+  display: inline-block;
+  vertical-align: top;
+  width: 18px;
+  height: 18px;
+  background-color: #ff6b00;
+  margin-inline-end: 12px;
+  margin-top: 12px;
+}
+
+.about-list span {
+  font: 2rem/2.75rem inter-bold;
+}
+
+.about-list ul {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+}
+
+.about-list ul a {
+  color: inherit;
+  font: 1.375rem/2.6875rem inter-regular;
 }
