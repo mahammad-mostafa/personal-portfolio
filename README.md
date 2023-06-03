@@ -35,8 +35,12 @@ It also includes some config linters for `HTML` & `CSS3` in the `.github` folder
 `HTML5` & `CSS3`
 
 📌 **Key Features:**
-- Mobile first design
-- Simple HTML page with a toolbar and headline
+- Mobile first design approach
+- Icons in SVG format for sharp visual
+- Toolbar with logo and menu button
+- Headline section with titles and paragraph
+- Works section with a detailed card for each item
+- About section containing text information
 
 <p align="right"><a href="#title">back to top</a></p>
 
@@ -83,8 +87,10 @@ You can deploy this project by uploading the two files `index.html` & `style.css
 
 Some additional features I may implement in the project:
 
-- [ ] Main page content
 - [ ] Footer section with links
+- [ ] Hamburger menu for mobile
+- [ ] Details popup for works items
+- [ ] Desktop design version
 
 <p align="right"><a href="#title">back to top</a></p>
 
