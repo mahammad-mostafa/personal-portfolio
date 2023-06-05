@@ -205,10 +205,9 @@ a {
   font: 1rem/1.5rem inter-regular, serif;
 }
 
-.works-grid-item-flex ul {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
+.works-grid-item-flex li {
+  float: left;
+  margin-right: 12px;
 }
 
 .works-grid-item-flex li a {
