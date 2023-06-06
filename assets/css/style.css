@@ -43,12 +43,26 @@ header {
   background-color: #3c3a39;
 }
 
+footer {
+  padding: 15px 0;
+  border-top: 1px solid #dfe1e6;
+}
+
+footer .socials {
+  justify-content: center;
+}
+
+footer .socials img {
+  filter: invert(34%) sepia(34%) saturate(377%) hue-rotate(178deg) brightness(98%) contrast(90%);
+}
+
 h1,
 h2,
 h3,
 ul,
 p,
-hr {
+hr,
+form {
   margin: 0;
 }
 
@@ -81,6 +95,24 @@ a {
 .button:disabled {
   color: #5b5957;
   background-color: #f4f1f0;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+}
+
+.socials a {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socials img {
+  height: 20px;
+  filter: invert(54%) sepia(96%) saturate(0%) hue-rotate(156deg) brightness(127%) contrast(105%);
 }
 
 .rhombus {
@@ -123,41 +155,24 @@ a {
   display: flex;
   gap: 12px;
   flex-direction: column;
-  padding: 120px 24px;
+  padding: 120px 0;
   background: #1c1a19 url(../img/hero.png) calc(100% + 120px) calc(100% - 5px)/200px 300px no-repeat;
 }
 
-.hero-title {
+.hero h1 {
   color: #ff6b00;
   font: 3.5rem/4rem crete-regular, serif;
   letter-spacing: 0.37px;
 }
 
-.hero-subtitle {
+.hero h2 {
   color: #fff5e1;
   font: 1.5rem/2rem roboto-bold, serif;
 }
 
-.hero-text {
+.hero p {
   color: #fff;
   font: 1rem/1.5rem poppins-regular, serif;
-}
-
-.hero-social {
-  display: flex;
-  align-items: center;
-}
-
-.hero-social a {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero-social img {
-  height: 20px;
 }
 
 .works-title {
@@ -187,6 +202,7 @@ a {
 
 .works-grid-item img {
   width: 100%;
+  display: block;
 }
 
 .works-grid-item-flex {
@@ -317,4 +333,44 @@ a {
 .about-list ul a {
   color: inherit;
   font: 1.375rem/2.6875rem inter-regular, serif;
+}
+
+.contact {
+  padding: 69px 0 78px;
+}
+
+.contact h1 {
+  color: #172b4d;
+  text-align: center;
+  font: 2rem/2.75rem inter-bold, serif;
+  margin-bottom: 104px;
+}
+
+.contact form {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 14px;
+  font: 0.9375rem/1.5rem inter-regular, serif;
+  border: 0;
+  border-bottom: 1px solid #dbd8d7;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.contact textarea {
+  height: 114px;
+  background-color: #fbf8f7;
+  border: 0;
+  resize: none;
+}
+
+.contact .button {
+  align-self: center;
+  font: 1.0625rem/1.5rem inter-bold, serif;
 }
