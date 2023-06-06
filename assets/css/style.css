@@ -48,14 +48,6 @@ footer {
   border-top: 1px solid #dfe1e6;
 }
 
-footer .socials {
-  justify-content: center;
-}
-
-footer .socials img {
-  filter: invert(34%) sepia(34%) saturate(377%) hue-rotate(178deg) brightness(98%) contrast(90%);
-}
-
 h1,
 h2,
 h3,
@@ -100,6 +92,7 @@ a {
 .socials {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .socials a {
@@ -112,7 +105,7 @@ a {
 
 .socials img {
   height: 20px;
-  filter: invert(54%) sepia(96%) saturate(0%) hue-rotate(156deg) brightness(127%) contrast(105%);
+  filter: invert(34%) sepia(34%) saturate(377%) hue-rotate(178deg) brightness(98%) contrast(90%);
 }
 
 .rhombus {
@@ -173,6 +166,14 @@ a {
 .hero p {
   color: #fff;
   font: 1rem/1.5rem poppins-regular, serif;
+}
+
+.hero .socials {
+  justify-content: flex-start;
+}
+
+.hero .socials img {
+  filter: invert(54%) sepia(96%) saturate(0%) hue-rotate(156deg) brightness(127%) contrast(105%);
 }
 
 .works-title {
