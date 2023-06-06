@@ -92,7 +92,6 @@ a {
 .socials {
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 
 .socials a {
@@ -105,7 +104,6 @@ a {
 
 .socials img {
   height: 20px;
-  filter: invert(34%) sepia(34%) saturate(377%) hue-rotate(178deg) brightness(98%) contrast(90%);
 }
 
 .rhombus {
@@ -168,11 +166,7 @@ a {
   font: 1rem/1.5rem poppins-regular, serif;
 }
 
-.hero .socials {
-  justify-content: flex-start;
-}
-
-.hero .socials img {
+.hero-socials img {
   filter: invert(54%) sepia(96%) saturate(0%) hue-rotate(156deg) brightness(127%) contrast(105%);
 }
 
@@ -374,4 +368,12 @@ a {
 .contact .button {
   align-self: center;
   font: 1.0625rem/1.5rem inter-bold, serif;
+}
+
+.footer-socials {
+  justify-content: center;
+}
+
+.footer-socials img {
+  filter: invert(34%) sepia(34%) saturate(377%) hue-rotate(178deg) brightness(98%) contrast(90%);
 }
