@@ -31,21 +31,22 @@
 html {
   padding: 0;
   margin: 0;
+  --bright-color: #fff;
+  --accent-color-1: #f55800;
+  --accent-color-2: #ff6b00;
+  --backgrounds-color: #1c1a19;
+  --primary-font-regular: inter-regular, serif;
+  --primary-font-medium: inter-medium, serif;
+  --primary-font-bold: inter-bold, serif;
+  --secondary-font-regular: crete-regular, serif;
+  --tertiary-font-bold: roboto-bold, serif;
+  --quaternary-font-regular: poppins-regular, serif;
 }
 
 body {
   padding: 0;
   font-size: 16px;
   margin: 0;
-}
-
-header {
-  background-color: #3c3a39;
-}
-
-footer {
-  padding: 15px 0;
-  border-top: 1px solid #dfe1e6;
 }
 
 h1,
@@ -67,15 +68,24 @@ a {
   text-decoration: none;
 }
 
+#header {
+  background-color: #3c3a39;
+}
+
+#footer {
+  padding: 15px 0;
+  border-top: 1px solid #dfe1e6;
+}
+
 .button {
-  color: #fff;
+  color: var(--bright-color);
   padding: 12px;
-  background-color: #f55800;
-  border: 1px solid #f55800;
+  background-color: var(--accent-color-1);
+  border: 1px solid var(--accent-color-1);
 }
 
 .button:hover {
-  color: #f55800;
+  color: var(--accent-color-1);
   background-color: #fff5e1;
 }
 
@@ -126,8 +136,8 @@ a {
 }
 
 .menu-logo {
-  color: #fff;
-  font: 1.125rem/1.5rem roboto-bold, serif;
+  color: var(--bright-color);
+  font: 1.125rem/1.5rem var(--tertiary-font-bold);
 }
 
 .menu-button {
@@ -151,19 +161,19 @@ a {
 }
 
 .hero h1 {
-  color: #ff6b00;
-  font: 3.5rem/4rem crete-regular, serif;
+  color: var(--accent-color-2);
+  font: 3.5rem/4rem var(--secondary-font-regular);
   letter-spacing: 0.37px;
 }
 
 .hero h2 {
   color: #fff5e1;
-  font: 1.5rem/2rem roboto-bold, serif;
+  font: 1.5rem/2rem var(--tertiary-font-bold);
 }
 
 .hero p {
-  color: #fff;
-  font: 1rem/1.5rem poppins-regular, serif;
+  color: var(--bright-color);
+  font: 1rem/1.5rem var(--quaternary-font-regular);
 }
 
 .hero-socials img {
@@ -175,8 +185,8 @@ a {
 }
 
 .works-title h1 {
-  color: #1c1a19;
-  font: 2.5rem/3.25rem crete-regular, serif;
+  color: var(--backgrounds-color);
+  font: 2.5rem/3.25rem var(--secondary-font-regular);
 }
 
 .works-title hr {
@@ -208,12 +218,12 @@ a {
 }
 
 .works-grid-item-flex h2 {
-  font: 2rem/2.75rem crete-regular, serif;
+  font: 2rem/2.75rem var(--secondary-font-regular);
   margin-top: 12px;
 }
 
 .works-grid-item-flex p {
-  font: 1rem/1.5rem inter-regular, serif;
+  font: 1rem/1.5rem var(--primary-font-regular);
 }
 
 .works-grid-item-flex ul {
@@ -226,13 +236,13 @@ a {
   display: block;
   color: inherit;
   padding: 10px 12px;
-  font: 0.9375rem/1.25rem inter-medium, serif;
+  font: 0.9375rem/1.25rem var(--primary-font-medium);
   border: 1px solid #8993a4;
 }
 
 .works-grid-item-flex .button {
   align-self: flex-start;
-  font: 1.0625rem/1.5rem inter-bold, serif;
+  font: 1.0625rem/1.5rem var(--primary-font-bold);
 }
 
 .works-grid-card .works-grid-item-flex {
@@ -240,7 +250,7 @@ a {
   top: 0;
   bottom: 0;
   inset-inline: 0;
-  color: #fff;
+  color: var(--bright-color);
   justify-content: flex-end;
   background: linear-gradient(180deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%);
 }
@@ -263,10 +273,10 @@ a {
 }
 
 .about {
-  background-color: #1c1a19;
+  background-color: var(--backgrounds-color);
 }
 
-.about-top {
+.about-header {
   display: flex;
   gap: 24px;
   flex-direction: column;
@@ -275,31 +285,31 @@ a {
   background: transparent url(../img/about.png) calc(100% + 250px) calc(100% - 5px)/400px 250px no-repeat;
 }
 
-.about-top h1 {
-  color: #ff6b00;
-  font: 4.5rem/5.5rem crete-regular, serif;
+.about-header h1 {
+  color: var(--accent-color-2);
+  font: 4.5rem/5.5rem var(--secondary-font-regular);
   letter-spacing: 0.37px;
 }
 
-.about-top p {
+.about-header p {
   color: #f4f5f7;
-  font: 1rem/1.5rem inter-regular, serif;
+  font: 1rem/1.5rem var(--primary-font-regular);
   letter-spacing: 0.37px;
 }
 
-.about-top .button {
+.about-header .button {
   align-self: flex-start;
-  font: 1.0625rem/1.5rem inter-bold, serif;
+  font: 1.0625rem/1.5rem var(--primary-font-bold);
 }
 
 .about hr {
-  border: 1px solid #fff;
+  border: 1px solid var(--bright-color);
 }
 
 .about-list {
   display: flex;
   gap: 24px;
-  color: #fff;
+  color: var(--bright-color);
   text-align: center;
   flex-direction: column;
   padding: 128px 0 75px;
@@ -310,13 +320,13 @@ a {
   vertical-align: top;
   width: 18px;
   height: 18px;
-  background-color: #ff6b00;
+  background-color: var(--accent-color-2);
   margin-inline-end: 12px;
   margin-top: 12px;
 }
 
 .about-list span {
-  font: 2rem/2.75rem inter-bold, serif;
+  font: 2rem/2.75rem var(--primary-font-bold);
 }
 
 .about-list ul {
@@ -327,7 +337,7 @@ a {
 
 .about-list ul a {
   color: inherit;
-  font: 1.375rem/2.6875rem inter-regular, serif;
+  font: 1.375rem/2.6875rem var(--primary-font-regular);
 }
 
 .contact {
@@ -337,7 +347,7 @@ a {
 .contact h1 {
   color: #172b4d;
   text-align: center;
-  font: 2rem/2.75rem inter-bold, serif;
+  font: 2rem/2.75rem var(--primary-font-bold);
   margin-bottom: 104px;
 }
 
@@ -351,7 +361,7 @@ a {
 .contact textarea {
   width: 100%;
   padding: 14px;
-  font: 0.9375rem/1.5rem inter-regular, serif;
+  font: 0.9375rem/1.5rem var(--primary-font-regular);
   border: 0;
   border-bottom: 1px solid #dbd8d7;
   box-sizing: border-box;
@@ -367,7 +377,7 @@ a {
 
 .contact .button {
   align-self: center;
-  font: 1.0625rem/1.5rem inter-bold, serif;
+  font: 1.0625rem/1.5rem var(--primary-font-bold);
 }
 
 .footer-socials {
