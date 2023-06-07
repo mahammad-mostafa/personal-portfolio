@@ -38,9 +38,11 @@ It also includes some config linters for `HTML` & `CSS3` in the `.github` folder
 - Mobile first design approach
 - Icons in SVG format for sharp visual
 - Toolbar with logo and menu button
-- Headline section with titles and paragraph
+- Hero section with titles and paragraph
 - Works section with a detailed card for each item
 - About section containing text information
+- Contact section with a form to submit
+- Footer secion with social icons links
 
 <p align="right"><a href="#title">back to top</a></p>
 
@@ -77,6 +79,9 @@ You can deploy this project by uploading the two files `index.html` & `style.css
 - [Twitter](https://twitter.com/mahammad_mostfa)
 - [LinkedIn](https://linkedin.com/in/mahammad-mostafa)
 
+📌 **Etsubdink:**
+- [GitHub](https://github.com/etsubdink-demeke12)
+
 <p align="right"><a href="#title">back to top</a></p>
 
 <!-- FUTURE -->
@@ -87,7 +92,6 @@ You can deploy this project by uploading the two files `index.html` & `style.css
 
 Some additional features I may implement in the project:
 
-- [ ] Footer section with links
 - [ ] Hamburger menu for mobile
 - [ ] Details popup for works items
 - [ ] Desktop design version
