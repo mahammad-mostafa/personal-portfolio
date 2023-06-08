@@ -129,7 +129,7 @@ Like this project? Show your support by starring!
 
 I thank everyone at **Microverse** for guiding me through this project.
 <br/>
-Special thanks for [John](https://github.com/Rysth) who contibuted this [issue](../../issues/3). 
+Special thanks for [John](https://github.com/Rysth) who contributed this [issue](../../issues/3). 
 
 <p align="right"><a href="#title">back to top</a></p>
 
