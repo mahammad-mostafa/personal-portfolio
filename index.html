@@ -55,7 +55,7 @@
 
     <!-- Works Start -->
 
-    <section id="#works" class="wrapper">
+    <section id="works" class="wrapper">
       <div class="works-title">
         <h1>My Recent Works</h1>
         <hr />
@@ -172,7 +172,7 @@
 
     <!-- About Start -->
 
-    <section class="about">
+    <section id="about" class="about">
       <header class="about-header">
         <h1 class="wrapper">About me</h1>
         <p class="wrapper">
@@ -225,15 +225,15 @@
 
     <!-- Contact Start -->
 
-    <section class="wrapper">
+    <section id="contact" class="wrapper">
       <div class="contact">
         <h1>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h1>
         <form action="https://formspree.io/f/xqkovylg" method="post">
           <label>
-            <input type="text" name="name" placeholder="Full name" maxlength="30" required />
+            <input type="text" name="name" placeholder="Full name" maxlength="30" autocomplete="true" required />
           </label>
           <label>
-            <input type="email" name="email" placeholder="Email address" required />
+            <input type="email" name="email" placeholder="Email address" autocomplete="true" required />
           </label>
           <label>
             <textarea name="message" placeholder="Write me something..." maxlength="500" required></textarea>
