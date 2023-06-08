@@ -82,8 +82,10 @@ a {
 }
 
 .button {
+  cursor: pointer;
   color: var(--bright-color);
   padding: 12px;
+  font: 1.0625rem/1.5rem var(--primary-font-bold);
   background-color: var(--accent-color-1);
   border: 1px solid var(--accent-color-1);
 }
@@ -164,7 +166,7 @@ a {
 
 .hero {
   padding: 168px 0;
-  background: #1c1a19 url(../img/hero.png) calc(100% + 120px) calc(100% - 5px)/200px 300px no-repeat;
+  background: var(--backgrounds-color) url(../img/hero.png) calc(100% + 120px) calc(100% - 5px)/200px 300px no-repeat;
 }
 
 .hero .wrapper {
@@ -257,7 +259,6 @@ a {
 
 .works-grid-flex .button {
   align-self: flex-start;
-  font: 1.0625rem/1.5rem var(--primary-font-bold);
 }
 
 .works-grid-card .works-grid-flex {
@@ -291,30 +292,32 @@ a {
   background-color: var(--backgrounds-color);
 }
 
-.about-header {
-  display: flex;
-  gap: 24px;
-  flex-direction: column;
-  align-items: flex-start;
+.about-banner {
   padding: 120px 0 209px;
   background: transparent url(../img/about.png) calc(100% + 250px) calc(100% - 5px)/400px 250px no-repeat;
 }
 
-.about-header h1 {
+.about-banner article {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.about-banner h1 {
   color: var(--accent-color-2);
   font: 4.5rem/5.5rem var(--secondary-font-regular);
   letter-spacing: 0.37px;
 }
 
-.about-header p {
+.about-banner p {
   color: #f4f5f7;
   font: 1rem/1.5rem var(--primary-font-regular);
   letter-spacing: 0.37px;
 }
 
-.about-header .button {
+.about-banner .button {
   align-self: flex-start;
-  font: 1.0625rem/1.5rem var(--primary-font-bold);
 }
 
 .about hr {
@@ -348,11 +351,12 @@ a {
   display: flex;
   gap: 8px;
   flex-direction: column;
+  margin-top: 24px;
 }
 
 .about-list ul a {
   color: inherit;
-  font: 1.375rem/2.6875rem var(--primary-font-regular);
+  font: 1.375rem/2.666875rem var(--primary-font-regular);
 }
 
 .contact {
@@ -385,6 +389,7 @@ a {
 
 .contact textarea {
   height: 114px;
+  font-style: italic;
   background-color: #fbf8f7;
   border: 0;
   resize: none;
@@ -392,7 +397,6 @@ a {
 
 .contact .button {
   align-self: center;
-  font: 1.0625rem/1.5rem var(--primary-font-bold);
 }
 
 .footer-socials {
@@ -454,7 +458,8 @@ a {
   .hero {
     position: relative;
     padding: 264px 0 251px;
-    background: #1c1a19 url(../img/hero.png) right top/35% 90% no-repeat;
+    background-size: 35% 90%;
+    background-position: right top;
   }
 
   .hero .wrapper {
@@ -523,6 +528,11 @@ a {
     gap: 24px;
   }
 
+  .works-grid-banner img {
+    width: 60%;
+    align-self: flex-start;
+  }
+
   .works-grid-banner h2 {
     font: 2.5rem/3.25rem var(--secondary-font-regular);
     margin: 0;
@@ -533,6 +543,7 @@ a {
   }
 
   .works-grid-card .works-grid-flex {
+    overflow: hidden;
     padding: 0 3px 16px;
   }
 
@@ -543,6 +554,59 @@ a {
   .works-grid-card .button {
     display: none;
     align-self: stretch;
+  }
+
+  .about-banner {
+    gap: 24px;
+    padding: 139px 0 130px;
+    background-size: 40% 60%;
+    background-position: right;
+  }
+
+  .about-banner article {
+    max-width: 50%;
+    margin: 0;
+  }
+
+  .about-banner h1 {
+    color: var(--accent-color-1);
+    line-height: 5.09375rem;
+    letter-spacing: normal;
+  }
+
+  .about-banner p {
+    font: 1.25rem/2rem var(--primary-font-regular);
+  }
+
+  .about-list {
+    gap: 24px;
+    text-align: start;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 138px 0 130px;
+  }
+
+  .contact {
+    display: flex;
+    gap: 24px;
+    padding: 130px 0 154px;
+  }
+
+  .contact h1 {
+    width: 50%;
+    color: #262626;
+    text-align: start;
+    font: 2.5rem/3.25rem var(--primary-font-bold);
+    margin: 0;
+  }
+
+  .contact form {
+    width: 50%;
+    gap: 24px;
+  }
+
+  .contact .button {
+    align-self: flex-start;
   }
 
   .works-grid-card:hover .works-grid-flex {
