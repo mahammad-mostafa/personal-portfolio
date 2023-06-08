@@ -28,10 +28,7 @@
   src: url(../font/inter-bold.ttf);
 }
 
-html {
-  padding: 0;
-  margin: 0;
-  scroll-behavior: smooth;
+:root {
   --bright-color: #fff;
   --accent-color-1: #f55800;
   --accent-color-2: #ff6b00;
@@ -44,10 +41,12 @@ html {
   --quaternary-font-regular: poppins-regular, serif;
 }
 
+html,
 body {
   padding: 0;
-  font-size: 16px;
   margin: 0;
+  font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -57,11 +56,11 @@ ul,
 p,
 hr,
 form {
+  padding: 0;
   margin: 0;
 }
 
 ul {
-  padding: 0;
   list-style: none;
 }
 
@@ -402,7 +401,7 @@ a {
   filter: invert(34%) sepia(34%) saturate(377%) hue-rotate(178deg) brightness(98%) contrast(90%);
 }
 
-@media only screen and (min-width:768px) {
+@media only screen and (min-width: 768px) {
   #header {
     background-color: #3e3c3c;
   }
@@ -446,7 +445,7 @@ a {
     justify-content: center;
   }
 
-  .header-menu-links a:last-child img {
+  .header-menu-links img {
     width: 22px;
   }
 
@@ -459,7 +458,7 @@ a {
   .hero .wrapper {
     gap: 24px;
   }
-  
+
   .hero h1,
   .hero h2,
   .hero p {
@@ -469,12 +468,12 @@ a {
   .hero h1 {
     font: 4.5rem/5.0625rem var(--secondary-font-regular);
   }
-  
+
   .hero h2 {
     color: var(--bright-color);
     font: 2rem/2.75rem var(--primary-font-medium);
   }
-  
+
   .hero p {
     color: #f4f5f7;
     font: 1.25rem/2rem var(--primary-font-regular);
@@ -482,7 +481,7 @@ a {
 
   .hero-socials {
     position: absolute;
-    top: calc(50% - 130px);
+    top: calc(50% - 100px);
     inset-inline-start: 10px;
     flex-direction: column;
   }
@@ -490,5 +489,4 @@ a {
   .hero-socials img {
     filter: invert(100%) sepia(0%) saturate(7459%) hue-rotate(50deg) brightness(136%) contrast(62%);
   }
-
 }
