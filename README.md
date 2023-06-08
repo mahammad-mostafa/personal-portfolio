@@ -36,6 +36,7 @@ It also includes some config linters for `HTML` & `CSS3` in the `.github` folder
 
 📌 **Key Features:**
 - Mobile first design approach
+- Responsive design on all screens
 - Icons in SVG format for sharp visual
 - Toolbar with logo and menu button
 - Hero section with titles and paragraph
@@ -91,10 +92,8 @@ You can deploy this project by uploading the two files `index.html` & `style.css
 # 🔭 Future
 
 Some additional features I may implement in the project:
-
 - [ ] Hamburger menu for mobile
 - [ ] Details popup for works items
-- [ ] Desktop design version
 
 <p align="right"><a href="#title">back to top</a></p>
 
@@ -129,6 +128,8 @@ Like this project? Show your support by starring!
 # 🙏🏻 Acknowledgements
 
 I thank everyone at **Microverse** for guiding me through this project.
+<br/>
+Special thanks for [John](https://github.com/Rysth) who contributed this [issue](../../issues/3). 
 
 <p align="right"><a href="#title">back to top</a></p>
 
