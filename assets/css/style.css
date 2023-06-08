@@ -93,7 +93,7 @@ a {
   background-color: #fff5e1;
 }
 
-.button:visited {
+.button:focus {
   color: #f4f1f0;
   background-color: #e05304;
 }
@@ -214,38 +214,40 @@ a {
   margin-bottom: 120px;
 }
 
-.works-grid-item {
+.works-grid-banner,
+.works-grid-card {
   position: relative;
 }
 
-.works-grid-item img {
+.works-grid-banner img,
+.works-grid-card img {
   width: 100%;
   display: block;
 }
 
-.works-grid-item-flex {
+.works-grid-flex {
   display: flex;
   flex-direction: column;
   gap: 12px;
   color: #091e42;
 }
 
-.works-grid-item-flex h2 {
+.works-grid-flex h2 {
   font: 2rem/2.75rem var(--secondary-font-regular);
   margin-top: 12px;
 }
 
-.works-grid-item-flex p {
+.works-grid-flex p {
   font: 1rem/1.5rem var(--primary-font-regular);
 }
 
-.works-grid-item-flex ul {
+.works-grid-flex ul {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
 }
 
-.works-grid-item-flex li a {
+.works-grid-flex li a {
   display: block;
   color: inherit;
   padding: 10px 12px;
@@ -253,12 +255,12 @@ a {
   border: 1px solid #8993a4;
 }
 
-.works-grid-item-flex .button {
+.works-grid-flex .button {
   align-self: flex-start;
   font: 1.0625rem/1.5rem var(--primary-font-bold);
 }
 
-.works-grid-card .works-grid-item-flex {
+.works-grid-card .works-grid-flex {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -488,5 +490,73 @@ a {
 
   .hero-socials img {
     filter: invert(100%) sepia(0%) saturate(7459%) hue-rotate(50deg) brightness(136%) contrast(62%);
+  }
+
+  .works-title {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 135px 0 114px;
+  }
+
+  .works-title h1 {
+    color: #091e42;
+  }
+
+  .works-title hr {
+    flex: 1;
+    margin: 0;
+  }
+
+  .works-grid {
+    gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .works-grid-banner {
+    grid-column: 1 / 4;
+    display: flex;
+    gap: 24px;
+  }
+
+  .works-grid-flex {
+    gap: 24px;
+  }
+
+  .works-grid-banner h2 {
+    font: 2.5rem/3.25rem var(--secondary-font-regular);
+    margin: 0;
+  }
+  
+  .works-grid-banner p {
+    font: 1.25rem/1.75rem var(--primary-font-regular);
+  }
+
+  .works-grid-card .works-grid-flex {
+    padding: 0 3px 16px;
+  }
+
+  .works-grid-card p {
+    font-size: 1.0625rem;
+  }
+
+  .works-grid-card .button {
+    display: none;
+    align-self: stretch;
+  }
+
+  .works-grid-card:hover .works-grid-flex {
+    padding: 0;
+    background: transparent;
+  }
+
+  .works-grid-card:hover h2,
+  .works-grid-card:hover p,
+  .works-grid-card:hover ul {
+    display: none;
+  }
+
+  .works-grid-card:hover .button {
+    display: block;
   }
 }
