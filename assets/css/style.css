@@ -88,6 +88,7 @@ a {
   font: 1.0625rem/1.5rem var(--primary-font-bold);
   background-color: var(--accent-color-1);
   border: 1px solid var(--accent-color-1);
+  transition: all 0.1s ease;
 }
 
 .button:hover {
@@ -545,6 +546,7 @@ a {
   .works-grid-card .works-grid-flex {
     overflow: hidden;
     padding: 0 3px 16px;
+    transition: all 0.1s ease;
   }
 
   .works-grid-card p {
