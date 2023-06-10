@@ -38,12 +38,14 @@ It also includes some config linters for `HTML` & `CSS3` in the `.github` folder
 - Mobile first design approach
 - Responsive design on all screens
 - Icons in SVG format for sharp visual
+- Hover effect on every link and icon
+- Animation on hero section heading
 - Toolbar with logo and menu button
 - Hero section with titles and paragraph
 - Works section with a detailed card for each item
 - About section containing text information
 - Contact section with a form to submit
-- Footer secion with social icons links
+- Footer section with social icons links
 
 <p align="right"><a href="#title">back to top</a></p>
 
