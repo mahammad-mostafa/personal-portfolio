@@ -182,7 +182,7 @@ a {
   color: var(--accent-color-2);
   font: 3.5rem/4rem var(--secondary-font-regular);
   letter-spacing: 0.37px;
-  animation: glow 1s ease-in-out infinite alternate;
+  animation: scale 1s ease-in-out infinite alternate;
 }
 
 .hero h2 {
@@ -648,7 +648,7 @@ a {
   }
 }
 
-@keyframes glow {
+@keyframes scale {
   50% {
     transform: scale(0.95);
   }
