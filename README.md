@@ -30,6 +30,9 @@ Check the below contents for futher details about this project.
 This project is about building a personal portfolio website. It contains two main files (`index.html` / `style.css`).
 It also includes some config linters for `HTML` & `CSS3` in the `.github` folder. 
 
+📌 **Live Demo:**
+You can check the project live from [here](https://mahammad-mostafa.github.io/personal-portfolio-site). 
+
 📌 **Tech Stack:**
 <br/>
 `HTML5` & `CSS3`
