@@ -31,16 +31,17 @@ This project is about building a personal portfolio website. It contains two mai
 It also includes some config linters for `HTML` & `CSS3` in the `.github` folder. 
 
 📌 **Live Demo:**
-You can check the project live from [here](https://mahammad-mostafa.github.io/personal-portfolio-site). 
+- See the project live from [here](https://mahammad-mostafa.github.io/personal-portfolio-site).
+- Check a screen recording to showcase the project [here](https://www.loom.com/share/88c81920af414ed990ed921229723289?sid=0fbd0b34-c04f-4c6b-9923-e7802dd173e0).
 
 📌 **Tech Stack:**
-<br/>
-`HTML5` & `CSS3`
+- Page strucutre is built with `HTML5`
+- Styling and effects built with `CSS3`
 
 📌 **Key Features:**
 - Mobile first design approach
 - Responsive design on all screens
-- Icons in SVG format for sharp visual
+- Icons in SVG format for sharp visuals
 - Hover effect on every link and icon
 - Animation on hero section heading
 - Toolbar with logo and menu button
@@ -61,16 +62,13 @@ You can check the project live from [here](https://mahammad-mostafa.github.io/pe
 You can easily download or fork this repository and work on it immadiately!
 
 📌 **Prerequisites:**
-<br/>
-No prior requirements needed!
+- No prior requirements needed!
 
 📌 **Setup:**
-<br/>
-Simply download or fork this repository.
+- Simply download or fork this repository.
 
 📌 **Deployment:**
-<br/>
-You can deploy this project by uploading the two files `index.html` & `style.css` to a live server.
+- You can deploy this project by uploading the two files `index.html` & `style.css` to a live server.
 
 <p align="right"><a href="#title">back to top</a></p>
 
