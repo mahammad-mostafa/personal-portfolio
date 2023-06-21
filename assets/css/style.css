@@ -670,7 +670,8 @@ a {
   }
 
   .header-menu a:hover,
-  .about-list a:hover {
+  .about-list a:hover,
+  .active-section {
     color: var(--accent-color-1);
   }
 
