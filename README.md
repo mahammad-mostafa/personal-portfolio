@@ -27,8 +27,8 @@ Check the below contents for futher details about this project.
 
 # 📖 Description
 
-This project is about building a personal portfolio website. It contains two main files (`index.html` / `style.css`).
-It also includes some config linters for `HTML` & `CSS3` in the `.github` folder. 
+This project is about building a personal portfolio website. It contains three main files (`index.html` / `style.css` / `script.js`).
+It also includes some config linters for (`HTML` / `CSS3` / `JavaScript`) in the `.github` folder. 
 
 📌 **Live Demo:**
 - See the project live from [here](https://mahammad-mostafa.github.io/personal-portfolio-site).
@@ -37,6 +37,7 @@ It also includes some config linters for `HTML` & `CSS3` in the `.github` folder
 📌 **Tech Stack:**
 - Page strucutre is built with `HTML5`
 - Styling and effects built with `CSS3`
+- Interaction and dynamic content built with `JavaScript`
 
 📌 **Key Features:**
 - Mobile first design approach
@@ -45,6 +46,9 @@ It also includes some config linters for `HTML` & `CSS3` in the `.github` folder
 - Hover effect on every link and icon
 - Animation on hero section heading
 - Toolbar with logo and menu button
+- Toggling hamburger mobile menu
+- Smooth scrolling for each section
+- Menu higlight with scrolling sections
 - Hero section with titles and paragraph
 - Works section with a detailed card for each item
 - About section containing text information
@@ -68,7 +72,7 @@ You can easily download or fork this repository and work on it immadiately!
 - Simply download or fork this repository.
 
 📌 **Deployment:**
-- You can deploy this project by uploading the two files `index.html` & `style.css` to a live server.
+- You can deploy this project by uploading three files (`index.html` / `style.css` / `script.js`) to a live server.
 
 <p align="right"><a href="#title">back to top</a></p>
 
@@ -86,7 +90,7 @@ You can easily download or fork this repository and work on it immadiately!
 📌 **Etsubdink:**
 - [GitHub](https://github.com/etsubdink-demeke12)
 
-📌 **Asiimwe:**
+📌 **Mark:**
 - [GitHub](https://github.com/as1imwe-mark)
 
 <p align="right"><a href="#title">back to top</a></p>
@@ -98,8 +102,8 @@ You can easily download or fork this repository and work on it immadiately!
 # 🔭 Future
 
 Some additional features I may implement in the project:
-- [ ] Hamburger menu for mobile
-- [ ] Details popup for works items
+- [ ] Backend and database integration
+- [ ] Admin panel for content management
 
 <p align="right"><a href="#title">back to top</a></p>
 
