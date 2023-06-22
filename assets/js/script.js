@@ -4,12 +4,12 @@ const headerMenu = document.querySelector('.header-menu-links');
 const headerButton = document.querySelector('.header-menu-button');
 const headerlinks = Array.from(document.querySelectorAll('.header-menu-links li'));
 const pageSections = Array.from(document.querySelectorAll('#works, #about, #contact'));
-const popupTitle = document.querySelector('.works-popup h3');
-const popupClose = document.querySelector('.works-popup button');
-const popupDescription = document.querySelector('.works-popup p');
-const popupTechnologies = document.querySelector('.works-popup ul');
-const popupButtons = document.querySelectorAll('.works-popup .button');
-const popupImage = document.querySelector('.works-popup-container-flex img');
+const popupTitle = document.querySelector('.works-popup-container h3');
+const popupImage = document.querySelector('.works-popup-container img');
+const popupClose = document.querySelector('.works-popup-container button');
+const popupDescription = document.querySelector('.works-popup-container p');
+const popupTechnologies = document.querySelector('.works-popup-container ul');
+const popupButtons = document.querySelectorAll('.works-popup-container .button');
 const projects = [
   {
     id: '1',
@@ -110,13 +110,16 @@ function openPopup(event) {
     if (project !== undefined) {
       fillPopup(project);
       worksPopup.classList.add('visibility');
+      document.body.classList.add('scrolling');
     }
   }
 }
 function closePopup() {
   worksPopup.classList.remove('visibility');
+  document.body.classList.remove('scrolling');
 }
 function toggleMenu() {
+  document.body.classList.toggle('scrolling');
   headerMenu.classList.toggle('visibility');
 }
 function pageScroll() {
