@@ -103,8 +103,10 @@ a {
 }
 
 .button:disabled {
+  cursor: not-allowed;
   color: #5b5957;
   background-color: #f4f1f0;
+  border-color: #f4f1f0;
 }
 
 .socials {
@@ -123,6 +125,16 @@ a {
 .socials img {
   width: 20px;
   transition: all 0.1s ease;
+}
+
+.close {
+  width: 40px;
+  height: 40px;
+  margin: 4px 0;
+  color: #979493;
+  background: transparent url(../svg/close.svg) center/14px auto no-repeat;
+  filter: invert(69%) sepia(3%) saturate(280%) hue-rotate(329deg) brightness(86%) contrast(83%);
+  border: 0;
 }
 
 .rhombus {
@@ -192,17 +204,6 @@ a {
 
 .header-menu-links-last {
   display: none;
-}
-
-.header-menu-links button,
-.works-popup-container button {
-  width: 40px;
-  height: 40px;
-  margin: 4px 0;
-  color: #979493;
-  background: transparent url(../svg/close.svg) center/14px auto no-repeat;
-  filter: invert(69%) sepia(3%) saturate(280%) hue-rotate(329deg) brightness(86%) contrast(83%);
-  border: 0;
 }
 
 .header-menu-links a {
@@ -347,9 +348,10 @@ a {
   inset-inline: 0;
   z-index: 999;
   display: none;
+  align-items: center;
+  flex-direction: column;
   padding: 16px;
   overflow-y: scroll;
-  flex-direction: column;
   background-color: rgba(151, 148, 147, 0.5);
   backdrop-filter: blur(5px);
 }
@@ -367,7 +369,7 @@ a {
   margin-bottom: 50px;
 }
 
-.works-popup-container button {
+.works-popup-container .close {
   cursor: pointer;
   position: absolute;
   top: 16px;
@@ -418,6 +420,21 @@ a {
   width: 18px;
   filter: invert(100%) sepia(0%) saturate(7385%) hue-rotate(133deg) brightness(123%) contrast(119%);
   margin: 0;
+}
+
+.works-popup-container-controls {
+  display: flex;
+  padding-top: 15px;
+  justify-content: space-between;
+  border-top: 1px solid #979493;
+  margin-top: 15px;
+}
+
+.works-popup-container-controls .button {
+  width: calc(50% - 7.5px);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .about {
@@ -709,7 +726,7 @@ a {
     margin: 0;
   }
 
-  .works-popup-container button {
+  .works-popup-container .close {
     top: 24px;
     inset-inline-end: 24px;
   }
