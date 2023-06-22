@@ -56,6 +56,7 @@ It also includes some config linters for (`HTML` / `CSS3` / `JavaScript`) in the
 - Footer section with social icons links
 - Details Popup window for browsing each project
 - Navigation buttons inside popup window
+- Custom form validation in contact form
 
 <p align="right"><a href="#title">back to top</a></p>
 
