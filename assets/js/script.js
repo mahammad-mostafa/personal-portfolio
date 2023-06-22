@@ -97,7 +97,7 @@ function fillGrid() {
   worksGrid.appendChild(fragment);
 }
 function fillPopup(project) {
-  popupImage.src = 'assets/img/popup.png';
+  popupImage.src = project.image;
   popupTitle.textContent = project.title;
   popupDescription.textContent = project.description;
   popupTechnologies.innerHTML = project.technologies.map((technology) => `<li>${technology}</li>`).join('');
