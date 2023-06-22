@@ -12,6 +12,8 @@ const popupDescription = document.querySelector('.works-popup-container p');
 const popupTechnologies = document.querySelector('.works-popup-container ul');
 const popupLinks = document.querySelectorAll('.works-popup-container-flex .button');
 const popupControls = document.querySelectorAll('.works-popup-container-controls .button');
+const contactForm = document.querySelector('#contact form');
+const contactMessage = document.querySelector('#contact small');
 const projects = [
   {
     id: '1',
@@ -160,12 +162,26 @@ function pageScroll() {
     }
   });
 }
+// validation function
+function submitForm(event) {
+  event.preventDefault();
+  validateFields();
+  if (contactMessage.textContent.length === 0) {
+    if (contactMessage.classList.contains('visibility')) {
+      contactMessage.classList.remove('visibility');
+    }
+    contactForm.submit();
+  } else {
+    contactMessage.classList.add('visibility');
+  }
+}
 worksGrid.addEventListener('click', openPopup);
 popupClose.addEventListener('click', closePopup);
 headerMenu.addEventListener('click', toggleMenu);
 headerButton.addEventListener('click', toggleMenu);
 popupControls[0].addEventListener('click', previousPopup);
 popupControls[1].addEventListener('click', nextPopup);
+contactForm.addEventListener('submit', submitForm);
 window.addEventListener('scroll', pageScroll);
 headerlinks.shift();
 headerlinks.pop();
