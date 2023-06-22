@@ -146,8 +146,10 @@ function nextPopup() {
   fillPopup();
 }
 function toggleMenu() {
-  document.body.classList.toggle('scrolling');
-  headerMenu.classList.toggle('visibility');
+  if (window.screen.width < 768) {
+    document.body.classList.toggle('scrolling');
+    headerMenu.classList.toggle('visibility');
+  }
 }
 function pageScroll() {
   pageSections.forEach((section, index) => {
