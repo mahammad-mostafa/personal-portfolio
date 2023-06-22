@@ -1,3 +1,4 @@
+let projectIndex = null;
 const worksGrid = document.querySelector('.works-grid');
 const worksPopup = document.querySelector('.works-popup');
 const headerMenu = document.querySelector('.header-menu-links');
@@ -9,7 +10,8 @@ const popupImage = document.querySelector('.works-popup-container img');
 const popupClose = document.querySelector('.works-popup-container button');
 const popupDescription = document.querySelector('.works-popup-container p');
 const popupTechnologies = document.querySelector('.works-popup-container ul');
-const popupButtons = document.querySelectorAll('.works-popup-container .button');
+const popupLinks = document.querySelectorAll('.works-popup-container-flex .button');
+const popupControls = document.querySelectorAll('.works-popup-container-controls .button');
 const projects = [
   {
     id: '1',
@@ -96,19 +98,30 @@ function fillGrid() {
   });
   worksGrid.appendChild(fragment);
 }
-function fillPopup(project) {
-  popupImage.src = project.image;
-  popupTitle.textContent = project.title;
-  popupDescription.textContent = project.description;
-  popupTechnologies.innerHTML = project.technologies.map((technology) => `<li>${technology}</li>`).join('');
-  popupButtons[0].setAttribute('href', project.live);
-  popupButtons[1].setAttribute('href', project.source);
+function fillPopup() {
+  popupImage.src = projects[projectIndex].image;
+  popupTitle.textContent = projects[projectIndex].title;
+  popupDescription.textContent = projects[projectIndex].description;
+  popupTechnologies.innerHTML = projects[projectIndex].technologies.map((technology) => `<li>${technology}</li>`).join('');
+  popupLinks[0].setAttribute('href', projects[projectIndex].live);
+  popupLinks[1].setAttribute('href', projects[projectIndex].source);
+  if (projectIndex === 0) {
+    popupControls[0].setAttribute('disabled', '');
+  } else if (popupControls[0].hasAttribute('disabled')) {
+    popupControls[0].removeAttribute('disabled');
+  }
+  if (projectIndex === projects.length - 1) {
+    popupControls[1].setAttribute('disabled', '');
+  } else if (popupControls[1].hasAttribute('disabled')) {
+    popupControls[1].removeAttribute('disabled');
+  }
 }
 function openPopup(event) {
   if (event.target.id !== '') {
     const project = projects.find((project) => project.id === event.target.id);
     if (project !== undefined) {
-      fillPopup(project);
+      projectIndex = projects.indexOf(project);
+      fillPopup();
       worksPopup.classList.add('visibility');
       document.body.classList.add('scrolling');
     }
@@ -117,6 +130,20 @@ function openPopup(event) {
 function closePopup() {
   worksPopup.classList.remove('visibility');
   document.body.classList.remove('scrolling');
+}
+function previousPopup() {
+  if (projectIndex === projects.length - 1) {
+    popupControls[1].removeAttribute('disabled');
+  }
+  projectIndex -= 1;
+  fillPopup();
+}
+function nextPopup() {
+  if (projectIndex === 0) {
+    popupControls[0].removeAttribute('disabled');
+  }
+  projectIndex += 1;
+  fillPopup();
 }
 function toggleMenu() {
   document.body.classList.toggle('scrolling');
@@ -135,6 +162,8 @@ worksGrid.addEventListener('click', openPopup);
 popupClose.addEventListener('click', closePopup);
 headerMenu.addEventListener('click', toggleMenu);
 headerButton.addEventListener('click', toggleMenu);
+popupControls[0].addEventListener('click', previousPopup);
+popupControls[1].addEventListener('click', nextPopup);
 window.addEventListener('scroll', pageScroll);
 headerlinks.shift();
 headerlinks.pop();
