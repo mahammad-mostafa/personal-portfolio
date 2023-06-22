@@ -543,6 +543,12 @@ a {
   resize: none;
 }
 
+.contact small {
+  display: none;
+  color: #f00;
+  font: 1rem/2rem var(--primary-font-bold);
+}
+
 .contact .button {
   align-self: center;
 }
