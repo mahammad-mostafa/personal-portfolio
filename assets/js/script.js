@@ -12,6 +12,8 @@ const popupDescription = document.querySelector('.works-popup-container p');
 const popupTechnologies = document.querySelector('.works-popup-container ul');
 const popupLinks = document.querySelectorAll('.works-popup-container-flex .button');
 const popupControls = document.querySelectorAll('.works-popup-container-controls .button');
+const contactForm = document.querySelector('#contact form');
+const contactMessage = document.querySelector('#contact small');
 const projects = [
   {
     id: '1',
@@ -146,8 +148,10 @@ function nextPopup() {
   fillPopup();
 }
 function toggleMenu() {
-  document.body.classList.toggle('scrolling');
-  headerMenu.classList.toggle('visibility');
+  if (window.screen.width < 768) {
+    document.body.classList.toggle('scrolling');
+    headerMenu.classList.toggle('visibility');
+  }
 }
 function pageScroll() {
   pageSections.forEach((section, index) => {
@@ -158,12 +162,40 @@ function pageScroll() {
     }
   });
 }
+function validateFields() {
+  if (contactForm.name.validity.valueMissing) {
+    contactMessage.textContent = 'Name field is required!';
+  } else if (contactForm.email.validity.valueMissing) {
+    contactMessage.textContent = 'Email field is required!';
+  } else if (contactForm.email.validity.typeMismatch) {
+    contactMessage.textContent = 'Valid email is required!';
+  } else if (contactForm.email.value.match('[A-Z]')) {
+    contactMessage.textContent = `Email must be in lowercase format. Use this format: ${contactForm.email.value.toLowerCase()}`;
+  } else if (contactForm.message.validity.valueMissing) {
+    contactMessage.textContent = 'Message field is required!';
+  } else {
+    contactMessage.textContent = '';
+  }
+}
+function submitForm(event) {
+  event.preventDefault();
+  validateFields();
+  if (contactMessage.textContent.length === 0) {
+    if (contactMessage.classList.contains('visibility')) {
+      contactMessage.classList.remove('visibility');
+    }
+    contactForm.submit();
+  } else {
+    contactMessage.classList.add('visibility');
+  }
+}
 worksGrid.addEventListener('click', openPopup);
 popupClose.addEventListener('click', closePopup);
 headerMenu.addEventListener('click', toggleMenu);
 headerButton.addEventListener('click', toggleMenu);
 popupControls[0].addEventListener('click', previousPopup);
 popupControls[1].addEventListener('click', nextPopup);
+contactForm.addEventListener('submit', submitForm);
 window.addEventListener('scroll', pageScroll);
 headerlinks.shift();
 headerlinks.pop();

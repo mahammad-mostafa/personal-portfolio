@@ -543,6 +543,12 @@ a {
   resize: none;
 }
 
+.contact small {
+  display: none;
+  color: #f00;
+  font: 1rem/2rem var(--primary-font-bold);
+}
+
 .contact .button {
   align-self: center;
 }
@@ -576,26 +582,31 @@ a {
     font: 1.25rem var(--primary-font-bold);
   }
 
-  .header-menu-button {
+  .header-menu-button,
+  .header-menu-links-first,
+  .works-grid-card .button {
     display: none;
+  }
+
+  .header-menu-links,
+  .header-menu-links-last,
+  .works-title,
+  .works-grid-banner,
+  .works-popup-container div,
+  .contact {
+    display: flex;
   }
 
   .header-menu-links {
     position: static;
     padding: 0;
-    display: flex;
     flex-direction: row;
     gap: 8px;
-  }
-
-  .header-menu-links-first {
-    display: none;
   }
 
   .header-menu-links-last {
     width: 40px;
     height: 40px;
-    display: flex;
     align-items: center;
     justify-content: center;
   }
@@ -620,7 +631,15 @@ a {
     background-position: right top;
   }
 
-  .hero .wrapper {
+  .hero .wrapper,
+  .works-title,
+  .works-grid,
+  .works-grid-banner,
+  .works-grid-flex,
+  .about-banner,
+  .about-list,
+  .contact,
+  .contact form {
     gap: 24px;
   }
 
@@ -656,9 +675,7 @@ a {
   }
 
   .works-title {
-    display: flex;
     align-items: center;
-    gap: 24px;
     padding: 135px 0 114px;
   }
 
@@ -672,18 +689,11 @@ a {
   }
 
   .works-grid {
-    gap: 24px;
     grid-template-columns: repeat(3, 1fr);
   }
 
   .works-grid-banner {
     grid-column: 1 / 4;
-    display: flex;
-    gap: 24px;
-  }
-
-  .works-grid-flex {
-    gap: 24px;
   }
 
   .works-grid-banner img {
@@ -713,7 +723,6 @@ a {
   }
 
   .works-grid-card .button {
-    display: none;
     align-self: stretch;
   }
 
@@ -740,7 +749,6 @@ a {
   }
 
   .works-popup-container div {
-    display: flex;
     gap: 25px;
   }
 
@@ -763,7 +771,6 @@ a {
   }
 
   .about-banner {
-    gap: 24px;
     padding: 139px 0 130px;
     background-size: 40% 60%;
     background-position: right;
@@ -785,7 +792,6 @@ a {
   }
 
   .about-list {
-    gap: 24px;
     text-align: start;
     flex-direction: row;
     justify-content: space-between;
@@ -793,8 +799,6 @@ a {
   }
 
   .contact {
-    display: flex;
-    gap: 24px;
     padding: 130px 0 154px;
   }
 
@@ -808,7 +812,6 @@ a {
 
   .contact form {
     width: 50%;
-    gap: 24px;
   }
 
   .contact .button {
