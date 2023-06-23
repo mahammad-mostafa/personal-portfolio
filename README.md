@@ -57,6 +57,7 @@ It also includes some config linters for (`HTML` / `CSS3` / `JavaScript`) in the
 - Details Popup window for browsing each project
 - Navigation buttons inside popup window
 - Custom form validation in contact form
+- Preserving contact form information in browser
 
 <p align="right"><a href="#title">back to top</a></p>
 
