@@ -549,8 +549,9 @@ a {
   font: 1rem/2rem var(--primary-font-bold);
 }
 
-.contact .button {
-  align-self: center;
+.contact-controls {
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer-socials {
@@ -639,7 +640,8 @@ a {
   .about-banner,
   .about-list,
   .contact,
-  .contact form {
+  .contact form,
+  .contact-controls {
     gap: 24px;
   }
 
@@ -814,8 +816,8 @@ a {
     width: 50%;
   }
 
-  .contact .button {
-    align-self: flex-start;
+  .contact-controls {
+    justify-content: flex-start;
   }
 
   .socials img:hover,
