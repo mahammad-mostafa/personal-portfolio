@@ -1,4 +1,5 @@
 let projectIndex = null;
+let formValues = { name: '', email: '', message: '' };
 const worksGrid = document.querySelector('.works-grid');
 const worksPopup = document.querySelector('.works-popup');
 const headerMenu = document.querySelector('.header-menu-links');
@@ -177,6 +178,14 @@ function validateFields() {
     contactMessage.textContent = '';
   }
 }
+function fillForm() {
+  if (localStorage.getItem('formValues') !== null) {
+    formValues = JSON.parse(localStorage.getItem('formValues'));
+  }
+  Object.keys(formValues).forEach((key) => {
+    contactForm[key].value = formValues[key];
+  });
+}
 function submitForm(event) {
   event.preventDefault();
   validateFields();
@@ -189,6 +198,18 @@ function submitForm(event) {
     contactMessage.classList.add('visibility');
   }
 }
+function storeForm(event) {
+  if (event.target.name in formValues) {
+    formValues[event.target.name] = event.target.value;
+    localStorage.setItem('formValues', JSON.stringify(formValues));
+  }
+}
+function clearForm() {
+  localStorage.clear();
+  if (contactMessage.classList.contains('visibility')) {
+    contactMessage.classList.remove('visibility');
+  }
+}
 worksGrid.addEventListener('click', openPopup);
 popupClose.addEventListener('click', closePopup);
 headerMenu.addEventListener('click', toggleMenu);
@@ -196,7 +217,10 @@ headerButton.addEventListener('click', toggleMenu);
 popupControls[0].addEventListener('click', previousPopup);
 popupControls[1].addEventListener('click', nextPopup);
 contactForm.addEventListener('submit', submitForm);
+contactForm.addEventListener('change', storeForm);
+contactForm.addEventListener('reset', clearForm);
 window.addEventListener('scroll', pageScroll);
 headerlinks.shift();
 headerlinks.pop();
 fillGrid();
+fillForm();
