@@ -164,17 +164,17 @@ function pageScroll() {
 }
 function validateFields() {
   if (contactForm.name.validity.valueMissing) {
-    contactMessage.textContent = ‘Name field is required!’;
+    contactMessage.textContent = 'Name field is required!';
   } else if (contactForm.email.validity.valueMissing) {
-    contactMessage.textContent = ‘Email field is required!’;
+    contactMessage.textContent = 'Email field is required!';
   } else if (contactForm.email.validity.typeMismatch) {
-    contactMessage.textContent = ‘Valid email is required!‘;
-  } else if (contactForm.email.value.match(‘[A-Z]’)) {
+    contactMessage.textContent = 'Valid email is required!';
+  } else if (contactForm.email.value.match('[A-Z]')) {
     contactMessage.textContent = `Email must be in lowercase format. Use this format: ${contactForm.email.value.toLowerCase()}`;
   } else if (contactForm.message.validity.valueMissing) {
-    contactMessage.textContent = ‘Message field is required!‘;
+    contactMessage.textContent = 'Message field is required!';
   } else {
-    contactMessage.textContent = ‘’;
+    contactMessage.textContent = '';
   }
 }
 function submitForm(event) {
