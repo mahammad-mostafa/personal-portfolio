@@ -18,12 +18,12 @@ const contactMessage = document.querySelector('#contact small');
 const projects = [
   {
     id: '1',
-    image: 'assets/img/works.png',
-    title: 'Multi-Post Stories',
-    description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry\'s standard dummy text ever since the 1500s.',
-    technologies: ['CSS', 'HTML', 'BootStrap', 'Ruby'],
-    source: '#',
-    live: '#',
+    image: 'assets/img/works/conference.png',
+    title: 'Global Game Summit',
+    description: 'This is the capstone project for the first module in Microverse program. It represents a conference event for video game development.',
+    technologies: ['CSS3', 'HTML5', 'JavaScript'],
+    source: 'https://github.com/mahammad-mostafa/game-industry-conference-site',
+    live: 'https://mahammad-mostafa.github.io/game-industry-conference-site',
   },
   {
     id: '2',
