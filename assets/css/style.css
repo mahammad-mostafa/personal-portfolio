@@ -279,6 +279,11 @@ a {
   display: block;
 }
 
+.works-grid-card img {
+  height: 125vw;
+  object-fit: cover;
+}
+
 .works-grid-flex {
   display: flex;
   flex-direction: column;
@@ -716,6 +721,10 @@ a {
     transition: all 0.1s ease;
   }
 
+  .works-grid-card img {
+    height: 400px;
+  }
+
   .works-grid-card .works-grid-flex {
     padding: 0 3px 16px;
   }
@@ -755,7 +764,7 @@ a {
   }
 
   .works-popup-container img {
-    width: 60%;
+    width: 50%;
     margin: 0;
   }
 
