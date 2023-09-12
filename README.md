@@ -2,7 +2,7 @@
 
 <!-- TITLE -->
 
-# 🏷️ Personal Portfolio Site
+# 🏷️ Personal Portfolio
 
 This is the second project in the first module in the **Microverse** program.
 <br/>
