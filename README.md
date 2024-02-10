@@ -31,7 +31,7 @@ This project is about building a personal portfolio website. It contains three m
 It also includes some config linters for (`HTML` / `CSS3` / `JavaScript`) in the `.github` folder. 
 
 📌 **Live Demo:**
-- See the project live from [here](https://mahammad-mostafa.github.io/personal-portfolio-site).
+- See the project live from [here](https://mahammad-mostafa.github.io/personal-portfolio).
 - Check a screen recording to showcase the project from [here](https://www.loom.com/share/88c81920af414ed990ed921229723289?sid=0fbd0b34-c04f-4c6b-9923-e7802dd173e0).
 
 📌 **Tech Stack:**
