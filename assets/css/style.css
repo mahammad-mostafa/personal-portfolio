@@ -567,7 +567,7 @@ a {
   filter: invert(34%) sepia(34%) saturate(377%) hue-rotate(178deg) brightness(98%) contrast(90%);
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   #header {
     background-color: #3e3c3c;
   }
